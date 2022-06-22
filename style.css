@@ -92,14 +92,41 @@
 }
 /* about section*/
 #about{
+    display: flex;
+    justify-content: center;    
+}
+.about{
+    justify-content: center;   
+}
+.box1{
     display:flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 20px;
-    margin-bottom: 50px;
+    flex-direction:row;
+    width:350px;
+    height:450px;
+    border: 1px solid black;
+    margin:10px;
+    align-items: center;
+    text-align: justify;
+    padding:10px;
+    border-radius: 15px;
+    background: linear-gradient(to top,rgb(255,45,45) 50% blue  50%);
+    background-size:100% 200% ;
+    transition: all .8s;
+
+
+}
+.box1:hover{
+    background-position: left bottom;
+    color:green     ;
+    border:none;
+    box-shadow: 0 0 20px rgb(255, 45, 73);
+
 }
 #pic{
     display:flex
+    
+    
+
 }
 #pic img{
     width: 575px;
@@ -141,7 +168,11 @@
 #service{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    background-color: rgba(135, 42, 42, 0.5);
+    color:blue  ;
+    align-items: center;
+    padding:20px;
+    text-align:justify;
 }
 .row{
     display: flex;
@@ -160,13 +191,13 @@
     text-align: justify;
     padding:10px;
     border-radius: 15px;
-    background: linear-gradient(to top,rgb(255,45,45) 50% white 50%);
+    background: linear-gradient(to top,rgb(255,45,45) 50% blue  50%);
     background-size:100% 200% ;
     transition: all .8s;
 }
 .box:hover{
     background-position: left bottom;
-    color:white;
+    color:green  ;
     border:none;
     box-shadow: 0 0 20px rgb(255,45,45);
     
@@ -175,7 +206,7 @@
 .box img{
     width: 80px;
     height:80px;
-    background-color: white;
+    background-color: white ;
     padding:10px;
 
 }
@@ -187,6 +218,8 @@
     background-color: rgba( 0,0,0,0.9);
     color:white;
     padding:20px;
+    text-align: center
+    
 }
 .form{
     display: flex;
